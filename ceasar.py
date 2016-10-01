@@ -6,7 +6,7 @@ def getMode():
         mode = input(
             '\nEnter "e" to encrypt or "d" to decrypt a message: ').lower()
         if mode in 'e d'.split():
-            return mode
+            return mode[0]
         else:
             print('Enter either "e" or "d".')
 
